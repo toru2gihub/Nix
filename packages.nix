@@ -121,7 +121,7 @@ fd
 ripgrep
 bat
 eza
-tmux
+zellij
 rsync
 ncdu
 xdg-user-dirs
