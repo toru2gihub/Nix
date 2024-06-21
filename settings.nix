@@ -43,6 +43,9 @@ networking.networkmanager.enable = true;
 # Firewall
 networking.firewall.enable = true;
 
+# Experimental features
+nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 # Gnome keyring
 services.gnome.gnome-keyring.enable = true;
 
