@@ -71,6 +71,7 @@ wget
 neovim
 git
 vimv
+nil
 python3
 
 # fonts
@@ -99,10 +100,12 @@ xorg.xrdb
 
 # tools
 texliveFull
+yazi
 ghostscript
 poppler
 android-file-transfer
 zathura
+ffmpegthumbnailer 
 unrar
 
 # privacy
@@ -128,6 +131,7 @@ xdg-user-dirs
 unzip
 zip
 gvfs
+file
 
 # cli-stuff
 cowsay
