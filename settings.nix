@@ -75,7 +75,7 @@ i18n.extraLocaleSettings = {
 };
 
 # Enable sound with pipewire.
-sound.enable = true;
+#sound.enable = true;
 hardware.pulseaudio.enable = false;
 security.rtkit.enable = true;
 services.pipewire = {
@@ -90,6 +90,11 @@ programs.gnupg.agent = {
    enable = true;
    #pinentryPackage = "curses";
    enableSSHSupport = true;
+};
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
 };
 
 }

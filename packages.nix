@@ -44,6 +44,7 @@ environment.systemPackages = with pkgs; [
    
 # lib
 libnotify
+libgcc
 
 # environment
 foot
@@ -51,9 +52,11 @@ tofi
 waybar
 wl-clipboard 
 mako
+
+## Hyprland
+pyprland
 hyprlock
 hypridle
-swww
 hyprpicker
 hyprcursor
 
@@ -63,11 +66,12 @@ yt-dlp
 newsboat
 telegram-desktop
 syncthing
+qbittorrent
 
 # development
 zsh
-emacs-gtk
 wget
+emacs-gtk
 neovim
 git
 vimv
@@ -84,18 +88,20 @@ mpd
 mpc-cli
 spotdl
 mpv
-ytfzf
 pulsemixer
-ncmpcpp
-wf-recorder
+#ncmpcpp
+obs-studio
+xdg-desktop-portal-hyprland
 ffmpeg
 
 # graphics
 nsxiv
+swww
 gimp
 inkscape
 grim
 slurp
+nwg-look
 xorg.xrdb
 
 # tools
@@ -105,6 +111,8 @@ ghostscript
 poppler
 android-file-transfer
 zathura
+xdg-utils
+hugo
 ffmpegthumbnailer 
 unrar
 
@@ -136,8 +144,9 @@ file
 # cli-stuff
 cowsay
 fastfetch
-sl
 cava
+fortune
+sl
    
   ];
 
