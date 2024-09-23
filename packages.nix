@@ -19,10 +19,16 @@
 {
 
 # Hyprland
-programs.hyprland = {
-  enable = true;
-  xwayland.enable = true;
-};
+ programs.hyprland = {
+ enable = true;
+ xwayland.enable = true;
+ };
+
+# KDE Plasma
+
+# services.displayManager.sddm.enable = true;
+# services.desktopManager.plasma6.enable = true;
+# services.displayManager.sddm.wayland.enable = true;
 
 # Zsh.
 programs.zsh.enable = true;
@@ -41,24 +47,38 @@ font-awesome
 nixpkgs.config.allowUnfree = true;
 
 environment.systemPackages = with pkgs; [
+
+## WINDOW MANAGER STUFF
+yazi
+zathura
+btop
+grim
+slurp
+nwg-look
+xorg.xrdb
+nsxiv
+swww
+ncmpcpp
+#obs-studio
+mpd
+mpc-cli
+foot
+tofi
+waybar
+mako
+
+## Hyprland
+hyprlock
+hypridle
+hyprpicker
+hyprcursor
    
 # lib
 libnotify
 libgcc
 
 # environment
-foot
-tofi
-waybar
 wl-clipboard 
-mako
-
-## Hyprland
-pyprland
-hyprlock
-hypridle
-hyprpicker
-hyprcursor
 
 # internet
 firefox
@@ -66,12 +86,11 @@ yt-dlp
 newsboat
 telegram-desktop
 syncthing
-qbittorrent
 
 # development
 zsh
 wget
-emacs-gtk
+emacs
 neovim
 git
 vimv
@@ -84,33 +103,21 @@ nerdfonts
 font-awesome
 
 # multimedia
-mpd
-mpc-cli
 spotdl
 mpv
 pulsemixer
-#ncmpcpp
-obs-studio
 xdg-desktop-portal-hyprland
 ffmpeg
 
 # graphics
-nsxiv
-swww
 gimp
 inkscape
-grim
-slurp
-nwg-look
-xorg.xrdb
 
 # tools
 texliveFull
-yazi
 ghostscript
 poppler
 android-file-transfer
-zathura
 xdg-utils
 hugo
 ffmpegthumbnailer 
@@ -127,7 +134,6 @@ gnumake
 stow
 tree
 fzf
-btop
 fd
 ripgrep
 bat
@@ -147,7 +153,7 @@ fastfetch
 cava
 fortune
 sl
-   
+ 
   ];
 
 }
