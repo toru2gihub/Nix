@@ -42,6 +42,7 @@ networking.networkmanager.enable = true;
 
 # Firewall
 networking.firewall.enable = true;
+networking.firewall.allowedTCPPorts = [ 80 443 ];
 
 # Experimental features
 nix.settings.experimental-features = [ "nix-command" "flakes" ];

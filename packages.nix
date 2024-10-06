@@ -24,12 +24,6 @@
  xwayland.enable = true;
  };
 
-# KDE Plasma
-
-# services.displayManager.sddm.enable = true;
-# services.desktopManager.plasma6.enable = true;
-# services.displayManager.sddm.wayland.enable = true;
-
 # Zsh.
 programs.zsh.enable = true;
 users.defaultUserShell = pkgs.zsh;
@@ -46,28 +40,26 @@ font-awesome
 # Allow unfree packages
 nixpkgs.config.allowUnfree = true;
 
+# PACKAGES
 environment.systemPackages = with pkgs; [
 
 ## WINDOW MANAGER STUFF
 yazi
 zathura
 btop
-grim
-slurp
 nwg-look
 xorg.xrdb
 nsxiv
 swww
 ncmpcpp
-#obs-studio
 mpd
 mpc-cli
 foot
-tofi
+kitty
 waybar
 mako
 
-## Hyprland
+# Hyprland
 hyprlock
 hypridle
 hyprpicker
@@ -76,9 +68,7 @@ hyprcursor
 # lib
 libnotify
 libgcc
-
-# environment
-wl-clipboard 
+gtk3-x11
 
 # internet
 firefox
@@ -86,6 +76,8 @@ yt-dlp
 newsboat
 telegram-desktop
 syncthing
+syncthingtray
+networkmanagerapplet
 
 # development
 zsh
@@ -108,13 +100,16 @@ mpv
 pulsemixer
 xdg-desktop-portal-hyprland
 ffmpeg
+wf-recorder
 
 # graphics
 gimp
 inkscape
+imagemagick
 
 # tools
-texliveFull
+texliveBasic
+libreoffice
 ghostscript
 poppler
 android-file-transfer
@@ -122,6 +117,8 @@ xdg-utils
 hugo
 ffmpegthumbnailer 
 unrar
+wl-clipboard 
+grimblast
 
 # privacy
 pinentry-curses
@@ -138,7 +135,7 @@ fd
 ripgrep
 bat
 eza
-zellij
+tmux
 rsync
 ncdu
 xdg-user-dirs
@@ -153,6 +150,7 @@ fastfetch
 cava
 fortune
 sl
+cbonsai
  
   ];
 
